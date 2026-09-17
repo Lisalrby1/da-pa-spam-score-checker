@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DA PA & Spam Score Checker</title>
+  <meta name="description" content="Check website Domain Authority, Page Authority, and Spam Score using our SEO checker tool.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">SEO<span>Checker</span></div>
+    <div class="header-label">SEO ANALYSIS TOOL</div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div class="badge">FREE SEO TOOL</div>
+
+      <h1>DA PA & Spam Score Checker</h1>
+
+      <p>
+        Analyze website authority and spam metrics with a simple SEO checker.
+      </p>
+    </section>
+
+    <section class="checker-card">
+
+      <label for="website">Enter Website URL</label>
+
+      <div class="input-group">
+        <input
+          type="url"
+          id="website"
+          placeholder="https://example.com"
+          autocomplete="url"
+        >
+
+        <button id="checkButton" onclick="checkWebsite()">
+          Check Website
+        </button>
+      </div>
+
+      <p class="input-note">
+        Enter a complete website URL, including https://
+      </p>
+
+      <div id="message" class="message"></div>
+
+      <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <span>Analyzing website metrics...</span>
+      </div>
+
+      <div id="results" class="results">
+
+        <div class="result-card">
+          <div class="result-icon">DA</div>
+          <h3>Domain Authority</h3>
+          <div class="score" id="daScore">--</div>
+          <p>Out of 100</p>
+        </div>
+
+        <div class="result-card">
+          <div class="result-icon">PA</div>
+          <h3>Page Authority</h3>
+          <div class="score" id="paScore">--</div>
+          <p>Out of 100</p>
+        </div>
+
+        <div class="result-card">
+          <div class="result-icon">SS</div>
+          <h3>Spam Score</h3>
+          <div class="score" id="spamScore">--</div>
+          <p>Percentage</p>
+        </div>
+
+      </div>
+
+      <div id="websiteResult" class="website-result"></div>
+
+    </section>
+
+    <section class="info-section">
+
+      <h2>What Do These Metrics Mean?</h2>
+
+      <div class="info-grid">
+
+        <div class="info-box">
+          <h3>Domain Authority (DA)</h3>
+          <p>
+            Domain Authority is a search engine ranking score developed by Moz
+            that predicts how likely a domain is to rank in search results.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h3>Page Authority (PA)</h3>
+          <p>
+            Page Authority estimates the ranking strength of an individual
+            webpage based on its link profile and other signals.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h3>Spam Score (SS)</h3>
+          <p>
+            Spam Score is an SEO risk indicator. A higher percentage may
+            indicate characteristics associated with potentially spammy sites.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 SEO Checker. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
